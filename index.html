@@ -44,7 +44,8 @@ function add_cost ()
 					{
 						x = menuItems[i].cost;
 						price = x * selected_number;
-						document.getElementsByName("cost")[i].value = price;
+						var rounded_price = price.toFixed(2);
+						document.getElementsByName("cost")[i].value = rounded_price;
 					}
 				else
 					{
